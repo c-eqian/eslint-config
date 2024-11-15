@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 默认配置" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;c-eqian&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/c-eqian/eslint-config.git&quot;,
+    &quot;accountId&quot;: &quot;4d65e663-ab51-4183-981f-1dd6f0f85b46&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2omeo1lh8pd2llc1tgfdtSwSONw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/project/@eqian/eslint-config/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.prepublishOnly.executor&quot;: &quot;Run&quot;,
+    &quot;npm.release.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\soft\\jetBrains\\WebStorm 4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\@eqian\eslint-config\src" />
+      <recent name="E:\project\@eqian\eslint-config\packages\config" />
+      <recent name="E:\project\@eqian\eslint-config\script" />
+      <recent name="E:\project\@eqian\eslint-config" />
+      <recent name="E:\project\@eqian\eslint-config\packages\presets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\@eqian\eslint-config\packages\config" />
+      <recent name="E:\project\@eqian\eslint-config\packages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.prepublishOnly">
+    <configuration name="prepublishOnly" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prepublishOnly" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="release" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="release" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.prepublishOnly" />
+        <item itemvalue="npm.release" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="" />
+      <created>1731479349402</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731479349402</updated>
+      <workItem from="1731479352404" duration="5938000" />
+      <workItem from="1731485419692" duration="202000" />
+      <workItem from="1731485634358" duration="795000" />
+      <workItem from="1731486449193" duration="76000" />
+      <workItem from="1731486531226" duration="256000" />
+      <workItem from="1731486795773" duration="35000" />
+      <workItem from="1731486835677" duration="1633000" />
+      <workItem from="1731488499476" duration="540000" />
+      <workItem from="1731489051113" duration="43000" />
+      <workItem from="1731489100615" duration="1763000" />
+      <workItem from="1731490892841" duration="118000" />
+      <workItem from="1731491018789" duration="56000" />
+      <workItem from="1731491080155" duration="457000" />
+      <workItem from="1731491549275" duration="826000" />
+      <workItem from="1731503096004" duration="2032000" />
+      <workItem from="1731544869457" duration="817000" />
+      <workItem from="1731545698928" duration="736000" />
+      <workItem from="1731546532660" duration="1538000" />
+      <workItem from="1731548124103" duration="858000" />
+      <workItem from="1731549032993" duration="1293000" />
+      <workItem from="1731550350443" duration="567000" />
+      <workItem from="1731550929112" duration="296000" />
+      <workItem from="1731551233495" duration="4553000" />
+      <workItem from="1731556051453" duration="10655000" />
+      <workItem from="1731572305696" duration="6231000" />
+      <workItem from="1731631162196" duration="3860000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: 默认配置">
+      <option name="closed" value="true" />
+      <created>1731633532747</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731633532747</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 默认配置">
+      <option name="closed" value="true" />
+      <created>1731634219337</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731634219337</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="feat: 默认配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 默认配置" />
+  </component>
+</project>

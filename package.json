@@ -1,0 +1,60 @@
+{
+  "name": "@eqian/eslint-config",
+  "version": "1.0.3",
+  "description": "",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "build": "pnpm run build:typegen && tsup",
+    "build:typegen": "tsx script/typegen.ts",
+    "release": "bumpp --no-push",
+    "prepublishOnly": "pnpm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "bumpp": "^9.8.1",
+    "eslint": "^9.14.0",
+    "eslint-typegen": "^0.3.2",
+    "picocolors": "^1.1.1",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.5.3"
+  },
+  "peerDependencies": {
+    "eslint": "^9.5.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "pnpm": {
+    "overrides": {
+      "is-core-module": "npm:@no-shims/is-core-module"
+    }
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^2.10.1",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@typescript-eslint/parser": "^8.14.0",
+    "conventional-changelog-cli": "^5.0.0",
+    "eslint-config-flat-gitignore": "^0.3.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import-x": "^4.4.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "eslint-plugin-vue": "^9.31.0",
+    "typescript-eslint": "^8.14.0",
+    "vue-eslint-parser": "^9.4.3"
+  }
+}
