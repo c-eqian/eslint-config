@@ -1,13 +1,16 @@
 {
-  "name": "@eqian/eslint-config",
-  "version": "1.0.3",
+  "name": "@eqian/eslint-config-preset",
+  "version": "1.0.0",
   "description": "",
   "type": "module",
   "private": false,
+  "keywords": ["ESlint", "eslint config", "eslint preset"],
   "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r",
     "build": "pnpm run build:typegen && tsup",
     "build:typegen": "tsx script/typegen.ts",
-    "release": "bumpp --no-push",
+    "gen-dep": "esno script/listDev.ts",
+    "release": "pnpm changelog && bumpp --commit --push --tag && pnpm -r publish --access public",
     "prepublishOnly": "pnpm run build"
   },
   "files": [
@@ -23,8 +26,11 @@
   "devDependencies": {
     "@types/node": "^22.9.0",
     "bumpp": "^9.8.1",
+    "conventional-changelog-cli": "^5.0.0",
     "eslint": "^9.14.0",
     "eslint-typegen": "^0.3.2",
+    "esno": "^4.8.0",
+    "local-pkg": "^0.5.0",
     "picocolors": "^1.1.1",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
@@ -43,9 +49,9 @@
     }
   },
   "dependencies": {
+    "@stylistic/eslint-plugin": "^2.10.1",
     "@types/eslint-config-prettier": "^6.11.3",
     "@typescript-eslint/parser": "^8.14.0",
-    "conventional-changelog-cli": "^5.0.0",
     "eslint-config-flat-gitignore": "^0.3.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.3",

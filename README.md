@@ -1,1 +1,72 @@
 # eslint-config
+配置个人喜好的`eslint`预设规则，避免重复劳动
+采用[eslint9.x](https://eslint.nodejs.cn/docs/latest/use/getting-started)以上版本，使用扁平化配置规则，即对象数组方式
+## 安装
+```typescript
+// npm insatll
+npm install @eqian/eslint-config-preset --save-dev
+
+// pnpm insatll
+pnpm install @eqian/eslint-config-preset -D
+
+```
+## 使用
+```typescript
+import { eslintPresets } from '@eqian/eslint-config';
+export default eslintPresets([
+  {
+      // 内置相关忽略文件，同样，也可以使用全局忽略文件，规则请查阅eslint文档
+    ignores: ['eslint.config.mjs', '.yalc', 'yalc'],
+    name: 'ignores',
+  },
+]);
+
+```
+## 预设规则
+ - 预设相关`JavaScript`规则
+ - 导入相关排序规则
+ - 强制使用单引号（`@stylistic/quotes`）
+ - 默认启用`vue`规则，如果非vue项目，可以传入第二个参数`{vue:false}`
+
+## 自定义规则
+支持添加自定义规则，详情查阅插件文档
+如，使用双引号规则
+```typescript
+import { eslintPresets } from '@eqian/eslint-config';
+export default eslintPresets([
+    {
+        ignores: ['eslint.config.mjs', '.yalc', 'yalc'],
+        name: 'test',
+    },
+    // 自定义规则
+    {
+        rules: {
+            "prettier/prettier": [
+                "warn",
+                {
+                    "singleQuote": false
+                }
+            ],
+            "@stylistic/quotes": ["error", "double"],
+        }
+    }
+]);
+
+```
+## 依赖项及版本号
+
+| Package | Version |
+| --- | --- |
+| @stylistic/eslint-plugin | `^2.10.1` |
+| @types/eslint-config-prettier | `^6.11.3` |
+| @typescript-eslint/parser | `^8.14.0` |
+| eslint-config-flat-gitignore | `^0.3.0` |
+| eslint-config-prettier | `^9.1.0` |
+| eslint-import-resolver-typescript | `^3.6.3` |
+| eslint-plugin-import-x | `^4.4.2` |
+| eslint-plugin-perfectionist | `^3.9.1` |
+| eslint-plugin-prettier | `^5.2.1` |
+| eslint-plugin-unused-imports | `^4.1.4` |
+| eslint-plugin-vue | `^9.31.0` |
+| typescript-eslint | `^8.14.0` |
+| vue-eslint-parser | `^9.4.3` |

@@ -9,8 +9,14 @@ export const pluginImport:any = interopDefault(_pluginImport)
 import * as _pluginUnusedImports from "eslint-plugin-unused-imports";
 export const pluginUnusedImports = interopDefault(_pluginUnusedImports)
 
+/**
+ * 从 ESLint 中分离出特定于 JavaScript 的功能
+ */
 import * as _pluginJs from "@eslint/js";
 export const pluginJs = interopDefault(_pluginJs)
+import * as _pluginStylistic from "@stylistic/eslint-plugin";
+export const pluginStylistic = interopDefault(_pluginStylistic)
+
 
 import * as _pluginConfigPrettier from "eslint-config-prettier";
 export const pluginConfigPrettier:any = interopDefault(_pluginConfigPrettier)

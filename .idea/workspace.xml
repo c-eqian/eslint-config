@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 默认配置">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 优化默认配置">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/javascript.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/javascript.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/prettier.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/prettier.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presets.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presets.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/typegen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typegen.ts" afterDir="false" />
@@ -64,6 +63,8 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.changelog.executor": "Run",
+    "npm.gen-dep.executor": "Run",
     "npm.prepublishOnly.executor": "Run",
     "npm.release.executor": "Run",
     "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
@@ -84,7 +85,27 @@
       <recent name="E:\project\@eqian\eslint-config\packages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.prepublishOnly">
+  <component name="RunManager" selected="npm.release">
+    <configuration name="changelog" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="changelog" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="gen-dep" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="gen-dep" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="prepublishOnly" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -107,8 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.prepublishOnly" />
         <item itemvalue="npm.release" />
+        <item itemvalue="npm.changelog" />
+        <item itemvalue="npm.prepublishOnly" />
+        <item itemvalue="npm.gen-dep" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731634219337</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: 优化默认配置">
+      <option name="closed" value="true" />
+      <created>1731642153455</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731642153455</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +222,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="feat: 默认配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 默认配置" />
+    <MESSAGE value="feat: 优化默认配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 优化默认配置" />
   </component>
 </project>

@@ -25,20 +25,24 @@ export const presetLangsExtensions: Config[] = [
 ]
 export const presetBasic: Config[] = [
     ...presetJavaScript,
-    ...typescript,
     ...sortImports,
+    ...typescript
 ]
 export const presetAll: Config[] = [
     ...presetBasic,
     ...presetLangsExtensions,
-    ...vue,
     ...prettier,
+    ...vue
 ]
 export { presetAll as all, presetBasic as basic }
 
-export function eslintPresets(config: Config | Config[] = []): Config[] {
+export function eslintPresets(config: Config | Config[] = [], options:{
+    vue: boolean,
+} = {vue:true}): Config[] {
     const configs: Config[] = [...presetBasic]
-    configs.push(...vue)
+    if (options.vue){
+        configs.push(...vue)
+    }
     configs.push(...prettier)
     if (Object.keys(config).length > 0) {
         configs.push(...(Array.isArray(config) ? config : [config]))
