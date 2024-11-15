@@ -14,13 +14,7 @@ export const prettier: Config[] = [
         rules: {
             ...prettierConflictRules,
             ...pluginPrettier.configs.recommended.rules,
-            "prettier/prettier": [
-                "error",
-                {
-                    "singleQuote": true,
-                    "parser": "flow"
-                }
-            ]
+            'prettier/prettier': 'warn',
         },
     },
 ]

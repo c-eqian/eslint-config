@@ -2,7 +2,7 @@
 // @ts-ignore
 import process from "node:process";
 import type { Config } from '../types'
-import {pluginJs, pluginsStylistic, pluginUnusedImports} from "../plugins";
+import {pluginJs, pluginUnusedImports} from "../plugins";
 const isInEditor = !!(
   (process.env.VSCODE_PID ||
     process.env.VSCODE_CWD ||
@@ -29,14 +29,12 @@ export const javascript:Config[] = [
       },
       sourceType: "module",
     },
-    name: "eqian/javaScript",
+    name: "eqian/js",
     plugins: {
       // @ts-ignore
       "unused-imports": pluginUnusedImports,
-      '@stylistic': pluginsStylistic
     },
     rules: {
-      '@stylistic/quotes': ['error', 'single'],
       "array-callback-return": "error",
       "block-scoped-var": "error",
       "dot-notation": "warn",

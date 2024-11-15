@@ -12,9 +12,6 @@ export const pluginUnusedImports = interopDefault(_pluginUnusedImports)
 import * as _pluginJs from "@eslint/js";
 export const pluginJs = interopDefault(_pluginJs)
 
-import * as _pluginsStylistic from "@stylistic/eslint-plugin";
-export const pluginsStylistic = interopDefault(_pluginsStylistic)
-
 import * as _pluginConfigPrettier from "eslint-config-prettier";
 export const pluginConfigPrettier:any = interopDefault(_pluginConfigPrettier)
 
@@ -30,3 +27,9 @@ export const pluginVue:any = interopDefault(_pluginVue)
 
 
 export * as _pluginParser from "vue-eslint-parser";
+
+/**
+ * 按字母顺序、自然顺序或行长对各种数据进行排序的规则，例如对象、导入、TypeScript 类型、枚举、JSX 属性、Svelte 属性等
+ */
+import * as _pluginPerfectionist from "eslint-plugin-perfectionist";
+export const pluginPerfectionist:any = interopDefault(_pluginPerfectionist)

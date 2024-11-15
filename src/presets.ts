@@ -1,21 +1,45 @@
-import {Linter} from "eslint";
-import { Rules } from './typegen'
-import {imports} from './config/imports'
-import {javascript} from './config/javascript'
-import {prettier} from './config/prettier'
-import {typescript} from './config/typescript'
-import {vue} from './config/vue'
-import {ignores} from './config/ignores'
-export type Config = Linter.Config<Linter.RulesRecord & Rules>
-export const eslintPresets = (config: Config | Config[]):Config[]=> {
-    const configs: Linter.Config[] = [
-        ...prettier,
-        ...imports,
-        ...javascript,
-        ...typescript,
-        ...vue,
-        ...ignores
-    ]
+import {
+    ignores,
+    imports,
+    javascript,
+    prettier,
+    sortImports,
+    sortPackageJson,
+    sortTsconfig,
+    typescript,
+    vue,
+} from './config'
+import type { Config } from './types'
+
+export const presetJavaScript: Config[] = [
+    ...ignores,
+    ...javascript,
+    ...imports,
+]
+export const presetJsonc: Config[] = [
+    ...sortPackageJson,
+    ...sortTsconfig,
+]
+export const presetLangsExtensions: Config[] = [
+    ...presetJsonc,
+]
+export const presetBasic: Config[] = [
+    ...presetJavaScript,
+    ...typescript,
+    ...sortImports,
+]
+export const presetAll: Config[] = [
+    ...presetBasic,
+    ...presetLangsExtensions,
+    ...vue,
+    ...prettier,
+]
+export { presetAll as all, presetBasic as basic }
+
+export function eslintPresets(config: Config | Config[] = []): Config[] {
+    const configs: Config[] = [...presetBasic]
+    configs.push(...vue)
+    configs.push(...prettier)
     if (Object.keys(config).length > 0) {
         configs.push(...(Array.isArray(config) ? config : [config]))
     }
