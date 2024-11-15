@@ -4,7 +4,13 @@
   "description": "",
   "type": "module",
   "private": false,
-  "keywords": ["ESlint", "eslint config", "eslint preset"],
+  "keywords": [
+    "ESlint",
+    "eslint config",
+    "eslint preset",
+    "prettier preset",
+    "prettier"
+  ],
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r",
     "build": "pnpm run build:typegen && tsup",
@@ -21,6 +27,7 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
+    "./prettier": "./dist/prettier.js",
     "./package.json": "./package.json"
   },
   "devDependencies": {
@@ -60,6 +67,7 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-unused-imports": "^4.1.4",
     "eslint-plugin-vue": "^9.31.0",
+    "prettier": "^3.3.3",
     "typescript-eslint": "^8.14.0",
     "vue-eslint-parser": "^9.4.3"
   }

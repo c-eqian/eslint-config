@@ -2,7 +2,7 @@
 // @ts-ignore
 import process from "node:process";
 import type { Config } from '../types'
-import {pluginJs, pluginUnusedImports, pluginStylistic} from "../plugins";
+import {pluginJs, pluginUnusedImports} from "../plugins";
 const isInEditor = !!(
   (process.env.VSCODE_PID ||
     process.env.VSCODE_CWD ||
@@ -33,11 +33,8 @@ export const javascript:Config[] = [
     plugins: {
       // @ts-ignore
       "unused-imports": pluginUnusedImports,
-      "@stylistic": pluginStylistic
     },
     rules: {
-      // 使用单引号
-      "@stylistic/quotes": ["error", "single"],
       "array-callback-return": "error",
       "block-scoped-var": "error",
       "dot-notation": "warn",

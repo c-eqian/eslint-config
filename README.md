@@ -22,15 +22,14 @@ export default eslintPresets([
 ]);
 
 ```
-## 预设规则
+## 预设ESlint规则
  - 预设相关`JavaScript`规则
  - 导入相关排序规则
- - 强制使用单引号（`@stylistic/quotes`）
  - 默认启用`vue`规则，如果非vue项目，可以传入第二个参数`{vue:false}`
 
 ## 自定义规则
 支持添加自定义规则，详情查阅插件文档
-如，使用双引号规则
+如，使用单引号规则
 ```typescript
 import { eslintPresets } from '@eqian/eslint-config';
 export default eslintPresets([
@@ -44,19 +43,48 @@ export default eslintPresets([
             "prettier/prettier": [
                 "warn",
                 {
-                    "singleQuote": false
+                    "singleQuote": true
                 }
             ],
-            "@stylistic/quotes": ["error", "double"],
+            "@stylistic/quotes": ["error", "single"],
         }
     }
 ]);
-
 ```
+## 配合prettier使用
+已经内置`prettier`预设，在根目录的`package.json`中添加如下即可
+```json
+{
+  "name": "xxx",
+  "type": "module",
+  "prettier": "@eqian/eslint-config-preset/prettier"
+}
+```
+## 预设prettier规则
+ - 单引号
+ - 末尾使用分号
+ - 函数单个参数省略括号
+ - ...
+
+## 自定义prettier规则
+可根据[prettier](https://www.prettier.cn/docs/configuration.html)文档进行配置
+如根目录下新建`prettier.config.mjs`
+```javascript
+// prettier.config.mjs
+import prettier from '@eqian/eslint-config-preset/prettier'
+const config = {
+    ...prettier,
+    semi: false,// 不使用分号结尾
+    singleQuote: false, // 使用双引号
+};
+
+export default config;
+```
+
 ## 依赖项及版本号
 
-| Package | Version |
-| --- | --- |
+| Package | Version  |
+| --- |----------|
 | @stylistic/eslint-plugin | `^2.10.1` |
 | @types/eslint-config-prettier | `^6.11.3` |
 | @typescript-eslint/parser | `^8.14.0` |
@@ -68,5 +96,6 @@ export default eslintPresets([
 | eslint-plugin-prettier | `^5.2.1` |
 | eslint-plugin-unused-imports | `^4.1.4` |
 | eslint-plugin-vue | `^9.31.0` |
+| prettier | `^3.3.3`   |
 | typescript-eslint | `^8.14.0` |
 | vue-eslint-parser | `^9.4.3` |
