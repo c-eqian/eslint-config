@@ -4,6 +4,7 @@
   "description": "",
   "type": "module",
   "private": false,
+  "license": "MIT",
   "keywords": [
     "ESlint",
     "eslint config",

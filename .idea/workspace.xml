@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 优化配置">
+    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 新增预设prettier">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/javascript.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/javascript.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/prettier.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/prettier.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typegen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typegen.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsup.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tsup.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/imports.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/imports.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,27 +46,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/self/eslint-config/src/config",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.changelog.executor": "Run",
-    "npm.gen-dep.executor": "Run",
-    "npm.prepublishOnly.executor": "Run",
-    "npm.release.executor": "Run",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "E:\\self\\eslint-config\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/self/eslint-config/src/config&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.changelog.executor&quot;: &quot;Run&quot;,
+    &quot;npm.gen-dep.executor&quot;: &quot;Run&quot;,
+    &quot;npm.prepublishOnly.executor&quot;: &quot;Run&quot;,
+    &quot;npm.release.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\self\\eslint-config\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\self\eslint-config\src\config" />
@@ -128,8 +125,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.prepublishOnly" />
-        <item itemvalue="npm.gen-dep" />
         <item itemvalue="npm.release" />
+        <item itemvalue="npm.gen-dep" />
         <item itemvalue="npm.changelog" />
       </list>
     </recent_temporary>
@@ -137,7 +134,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
       </set>
     </attachedChunks>
   </component>
@@ -175,6 +172,9 @@
       <workItem from="1731556051453" duration="10655000" />
       <workItem from="1731572305696" duration="6231000" />
       <workItem from="1731631162196" duration="3860000" />
+      <workItem from="1731661550555" duration="2869000" />
+      <workItem from="1731749669704" duration="44000" />
+      <workItem from="1731750078651" duration="710000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 默认配置">
       <option name="closed" value="true" />
@@ -208,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731656831898</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: 新增预设prettier">
+      <option name="closed" value="true" />
+      <created>1731660957026</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731660957026</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +239,7 @@
     <MESSAGE value="feat: 默认配置" />
     <MESSAGE value="feat: 优化默认配置" />
     <MESSAGE value="feat: 优化配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 优化配置" />
+    <MESSAGE value="feat: 新增预设prettier" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增预设prettier" />
   </component>
 </project>

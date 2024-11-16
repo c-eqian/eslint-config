@@ -13,12 +13,12 @@ export const imports: Config[] = [
     },
     rules: {
       "import/first": "error",
-      "import/no-default-export": "error",
+      "import/no-default-export": "off",
       "import/no-duplicates": "error",
       "import/no-mutable-exports": "error",
       "import/no-named-default": "error",
       "import/no-self-import": "error",
-      "import/no-webpack-loader-syntax": "error",
+      "import/no-webpack-loader-syntax": "error"
     },
   },
 ];
