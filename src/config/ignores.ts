@@ -1,18 +1,18 @@
 
 import type { Config } from '../types'
 import {pluginIgnore} from "../plugins";
-const GLOB_NODE_MODULES = '**/node_modules' as const
-const GLOB_DIST = '**/dist' as const
-const GLOB_LOCKFILE = [
+const IGNORE_NODE_MODULES = '**/node_modules' as const
+const IGNORE_DIST = '**/dist' as const
+const IGNORE_LOCKFILE = [
   '**/package-lock.json',
   '**/yarn.lock',
   '**/pnpm-lock.yaml',
   '**/bun.lockb',
 ]
-export const GLOB_EXCLUDE = [
-  GLOB_NODE_MODULES,
-  GLOB_DIST,
-  ...GLOB_LOCKFILE,
+export const IGNORE_EXCLUDE = [
+  IGNORE_NODE_MODULES,
+  IGNORE_DIST,
+  ...IGNORE_LOCKFILE,
 
   '**/output',
   '**/coverage',
@@ -36,7 +36,7 @@ export const GLOB_EXCLUDE = [
 ]
 export const ignores: Config[] = [
   {
-    ignores: GLOB_EXCLUDE,
+    ignores: IGNORE_EXCLUDE,
     name: 'eqian/global-ignores',
   },
   {
