@@ -30,6 +30,19 @@ export const typescriptCore = pluginTypescript.config({
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-unsafe-function-type": "off",
+    "@typescript-eslint/naming-convention": [
+        'error',
+      { selector: 'interface',
+        format: ['PascalCase'],
+        custom: {
+          regex: "^I[A-Z]",
+          match: true
+        }
+      },
+      { selector: 'typeAlias',
+        format: ['PascalCase']
+      }
+    ],
     "@typescript-eslint/no-unused-expressions": [
       "error",
       {
