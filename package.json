@@ -21,7 +21,7 @@
     "build": "pnpm run build:typegen && tsup",
     "build:typegen": "tsx script/typegen.ts",
     "gen-dep": "esno script/listDev.ts",
-    "release": "pnpm changelog && bumpp --commit --push --tag && pnpm -r publish --access public",
+    "release": "pnpm changelog && bumpp --commit --push --tag && pnpm -r publish --access public --no-git-checks",
     "prepublishOnly": "pnpm run build"
   },
   "files": [

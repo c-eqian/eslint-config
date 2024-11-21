@@ -1,5 +1,6 @@
 # eslint-config
-配置个人喜好的`eslint`预设规则，避免重复劳动
+在开发项目中是否还要为eslint的各种配置而烦恼？是否每次创建新项目而进行不断的复制、粘贴eslint配置？
+现在，配置个人喜好的`eslint`预设规则，减少重复劳动
 采用[eslint9.x](https://eslint.nodejs.cn/docs/latest/use/getting-started)以上版本，使用扁平化配置规则，即对象数组方式
 ## 安装
 ```typescript
