@@ -19,7 +19,9 @@ export const typescriptCore = pluginTypescript.config({
     ],
     "@typescript-eslint/consistent-type-imports": [
       "error",
-      { disallowTypeAnnotations: false, fixStyle: "inline-type-imports" },
+      {
+        prefer: "type-imports"
+      }
     ],
     "@typescript-eslint/method-signature-style": ["error", "property"],
     "@typescript-eslint/no-empty-object-type": "off",

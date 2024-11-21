@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 新增预设prettier">
+    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 修改默认导出规则">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/imports.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/imports.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/javascript.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/javascript.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/typescript.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/typescript.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsup.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tsup.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,28 +48,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/self/eslint-config/src/config&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.changelog.executor&quot;: &quot;Run&quot;,
-    &quot;npm.gen-dep.executor&quot;: &quot;Run&quot;,
-    &quot;npm.prepublishOnly.executor&quot;: &quot;Run&quot;,
-    &quot;npm.release.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\self\\eslint-config\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/self/eslint-config/src/config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.changelog.executor": "Run",
+    "npm.gen-dep.executor": "Run",
+    "npm.prepublishOnly.executor": "Run",
+    "npm.release.executor": "Run",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "E:\\self\\eslint-config\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\self\eslint-config\src\config" />
@@ -175,6 +178,10 @@
       <workItem from="1731661550555" duration="2869000" />
       <workItem from="1731749669704" duration="44000" />
       <workItem from="1731750078651" duration="710000" />
+      <workItem from="1731751031715" duration="86000" />
+      <workItem from="1731756402155" duration="2535000" />
+      <workItem from="1732003584165" duration="603000" />
+      <workItem from="1732156840122" duration="1759000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 默认配置">
       <option name="closed" value="true" />
@@ -216,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731660957026</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: 修改默认导出规则">
+      <option name="closed" value="true" />
+      <created>1731751106251</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731751106251</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +255,7 @@
     <MESSAGE value="feat: 优化默认配置" />
     <MESSAGE value="feat: 优化配置" />
     <MESSAGE value="feat: 新增预设prettier" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增预设prettier" />
+    <MESSAGE value="feat: 修改默认导出规则" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 修改默认导出规则" />
   </component>
 </project>

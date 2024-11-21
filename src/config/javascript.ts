@@ -85,7 +85,7 @@ export const javascript:Config[] = [
       "unused-imports/no-unused-imports": isInEditor ? "off" : "error",
       "unused-imports/no-unused-vars": [
         "error",
-        { args: "after-used", ignoreRestSiblings: true },
+        { args: "after-used", ignoreRestSiblings: true, argsIgnorePattern: "^_" },
       ],
       "use-isnan": [
         "error",
