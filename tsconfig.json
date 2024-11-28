@@ -4,6 +4,7 @@
     "lib": ["es2022"],
     "module": "esnext",
     "moduleResolution": "bundler",
+    "noImplicitAny": true,
     "types": ["node"],
     "strict": true,
     "noUnusedLocals": true,
