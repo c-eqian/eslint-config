@@ -1,6 +1,6 @@
 # eslint-config
 在开发项目中是否还要为eslint的各种配置而烦恼？是否每次创建新项目而进行不断的复制、粘贴eslint配置？
-现在，配置个人喜好的`eslint`预设规则，减少重复劳动
+现在，配置一些常用的`eslint`预设规则，可以解决以上问题。
 采用[eslint9.x](https://eslint.nodejs.cn/docs/latest/use/getting-started)以上版本，使用扁平化配置规则，即对象数组方式
 ## 安装
 ```typescript
@@ -82,21 +82,30 @@ const config = {
 export default config;
 ```
 
+## 模式切换
+为了应对不同框架的`eslint`规则配置，现在支持进行模式切换。
+通过配置`mode`模式，进行生效，默认为`vue`，支持模式为`'vue' | 'react' | 'normal'`
+
 ## 依赖项及版本号
 
-| Package | Version  |
-| --- |----------|
-| @stylistic/eslint-plugin | `^2.10.1` |
-| @types/eslint-config-prettier | `^6.11.3` |
-| @typescript-eslint/parser | `^8.14.0` |
-| eslint-config-flat-gitignore | `^0.3.0` |
-| eslint-config-prettier | `^9.1.0` |
-| eslint-import-resolver-typescript | `^3.6.3` |
-| eslint-plugin-import-x | `^4.4.2` |
-| eslint-plugin-perfectionist | `^3.9.1` |
-| eslint-plugin-prettier | `^5.2.1` |
-| eslint-plugin-unused-imports | `^4.1.4` |
-| eslint-plugin-vue | `^9.31.0` |
-| prettier | `^3.3.3`   |
-| typescript-eslint | `^8.14.0` |
-| vue-eslint-parser | `^9.4.3` |
+| Package | Version |
+| --- | --- |
+| @stylistic/eslint-plugin | ^2.10.1 |
+| @types/eslint-config-prettier | ^6.11.3 |
+| @typescript-eslint/parser | ^8.14.0 |
+| eslint-config-flat-gitignore | ^0.3.0 |
+| eslint-config-prettier | ^9.1.0 |
+| eslint-import-resolver-typescript | ^3.6.3 |
+| eslint-plugin-import-x | ^4.4.2 |
+| eslint-plugin-perfectionist | ^3.9.1 |
+| eslint-plugin-prettier | ^5.2.1 |
+| eslint-plugin-react | ^7.37.2 |
+| eslint-plugin-react-hooks | ^5.1.0 |
+| eslint-plugin-react-refresh | ^0.4.16 |
+| eslint-plugin-unused-imports | ^4.1.4 |
+| eslint-plugin-vue | ^9.31.0 |
+| globals | ^15.13.0 |
+| prettier | ^3.3.3 |
+| typescript-eslint | ^8.14.0 |
+| vue-eslint-parser | ^9.4.3 |
+

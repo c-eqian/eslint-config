@@ -3,6 +3,7 @@
 import process from "node:process";
 import type { Config } from '../types'
 import {pluginJs, pluginUnusedImports} from "../plugins";
+import globals from "globals";
 const isInEditor = !!(
   (process.env.VSCODE_PID ||
     process.env.VSCODE_CWD ||
@@ -21,13 +22,18 @@ export const javascript:Config[] = [
   { ...pluginJs.configs.recommended, name: 'eqian/js/recommended' },
   {
     languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.es2021,
+        ...globals.node,
+      },
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
         },
-        sourceType: "module",
+        sourceType: 'module',
       },
-      sourceType: "module",
+      sourceType: 'module',
     },
     name: "eqian/js",
     plugins: {

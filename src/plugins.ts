@@ -39,3 +39,13 @@ export * as _pluginParser from "vue-eslint-parser";
  */
 import * as _pluginPerfectionist from "eslint-plugin-perfectionist";
 export const pluginPerfectionist:any = interopDefault(_pluginPerfectionist)
+
+/** react 插件*/
+// @ts-ignore
+import reactHooks from 'eslint-plugin-react-hooks';
+export const pluginReactHooks:any = interopDefault(reactHooks)
+// @ts-ignore
+import reactRefresh from 'eslint-plugin-react-refresh';
+export const pluginReactRefresh = interopDefault(reactRefresh)
+import _pluginReact from 'eslint-plugin-react';
+export const pluginReact = interopDefault(_pluginReact)

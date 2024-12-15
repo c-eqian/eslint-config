@@ -8,6 +8,7 @@ import {
     sortTsconfig,
     typescript,
     vue,
+    reactConfig,
 } from './config'
 import type { Config } from './types'
 
@@ -35,13 +36,16 @@ export const presetAll: Config[] = [
     ...vue
 ]
 export { presetAll as all, presetBasic as basic }
-
-export function eslintPresets(config: Config | Config[] = [], options:{
-    vue: boolean,
-} = {vue:true}): Config[] {
+export type Options = {
+    mode?: 'vue' | 'react' | 'normal'
+}
+export function eslintPresets(config: Config | Config[] = [], options:Options = {mode:'vue'}): Config[] {
     const configs: Config[] = [...presetBasic]
-    if (options.vue){
+    const { mode='vue' } = options ?? {} as Options
+    if (mode==='vue'){
         configs.push(...vue)
+    }else if(mode==='react'){
+        configs.push(...reactConfig)
     }
     configs.push(...prettier)
     if (Object.keys(config).length > 0) {
