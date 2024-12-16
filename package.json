@@ -24,7 +24,7 @@
     "test:plugin": "pnpm -C src/component-file test",
     "build:typegen": "tsx script/typegen.ts",
     "gen-dep": "esno script/listDev.ts",
-    "release": "pnpm changelog && bumpp --commit --push --tag && pnpm -r publish --access public --no-git-checks",
+    "release": "pnpm run build && pnpm changelog && bumpp --commit --push --tag && pnpm -r publish --access public --no-git-checks",
     "release:plugin": "pnpm -C src/component-file release",
     "prepublishOnly": "pnpm run build"
   },

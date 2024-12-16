@@ -1,12 +1,12 @@
 {
   "name": "eslint-plugin-file-naming",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "eslint文件命名规范惯例插件",
   "type": "module",
   "author": "eqian",
   "scripts": {
     "build": "tsup",
-    "release": "bumpp && pnpm -r publish --access public --no-git-checks",
+    "release": "pnpm run build && bumpp && pnpm -r publish --access public --no-git-checks",
     "test": "tsx __test__/index.test.ts"
   },
   "keywords": [
