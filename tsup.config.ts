@@ -2,7 +2,7 @@ import { defineConfig } from 'tsup'
 
 export default defineConfig([
   {
-    entry: ['src/index.ts'],
+    entry: ['src/index.test.ts'],
     format: ['esm'],
     target: 'node18.18',
     dts: true,

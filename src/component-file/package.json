@@ -1,0 +1,48 @@
+{
+  "name": "eslint-plugin-component-file",
+  "version": "1.0.0",
+  "description": "针对组件命名规范设计，采用组件名称大驼峰命名；禁止对组件名称命名为index.{vue,tsx,jsx}或者Index.{vue,tsx,jsx}",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "test": "tsx __test__/index.test.ts"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "folder",
+    "path",
+    "file",
+    "filename",
+    "component-name",
+    "naming-conventions"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c-eqian/eslint-config.git"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "private": true,
+  "dependencies": {
+    "micromatch": "^4.0.8"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/micromatch": "^4.0.9"
+  }
+}
