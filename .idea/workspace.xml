@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 添加对react支持">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 优化component-file插件">
+      <change afterPath="$PROJECT_DIR$/src/component-file/bump.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-workspace.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-workspace.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typegen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typegen.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsup.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tsup.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +69,7 @@
     "npm.gen-dep.executor": "Run",
     "npm.prepublishOnly.executor": "Run",
     "npm.release.executor": "Run",
+    "npm.release:plugin.executor": "Run",
     "npm.test:plugin.executor": "Run",
     "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
     "ts.external.directory.path": "E:\\self\\eslint-config\\node_modules\\typescript\\lib",
@@ -89,7 +89,7 @@
       <recent name="E:\project\@eqian\eslint-config\packages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test:plugin">
+  <component name="RunManager" selected="npm.release:plugin">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -120,11 +120,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="release" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="release:plugin" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="release" />
+        <script value="release:plugin" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.release:plugin" />
         <item itemvalue="npm.test:plugin" />
         <item itemvalue="npm.build:plugin" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.gen-dep" />
-        <item itemvalue="npm.release" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +199,7 @@
       <workItem from="1732003584165" duration="603000" />
       <workItem from="1732156840122" duration="2535000" />
       <workItem from="1732160173898" duration="4446000" />
-      <workItem from="1734316016795" duration="13024000" />
+      <workItem from="1734316016795" duration="16197000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 默认配置">
       <option name="closed" value="true" />
@@ -281,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734239786707</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: 新增component-file插件">
+      <option name="closed" value="true" />
+      <created>1734334776549</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1734334776549</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +319,8 @@
     <MESSAGE value="perf: 修改忽略文件导出" />
     <MESSAGE value="feat: 强制类型定义：接口类型定义需要I为前缀的大驼峰命名，type类型别名需要大驼峰命名" />
     <MESSAGE value="feat: 添加对react支持" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加对react支持" />
+    <MESSAGE value="feat: 新增component-file插件" />
+    <MESSAGE value="feat: 优化component-file插件" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 优化component-file插件" />
   </component>
 </project>

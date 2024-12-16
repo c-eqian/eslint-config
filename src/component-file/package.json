@@ -1,10 +1,12 @@
 {
   "name": "eslint-plugin-component-file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "针对组件命名规范设计，采用组件名称大驼峰命名；禁止对组件名称命名为index.{vue,tsx,jsx}或者Index.{vue,tsx,jsx}",
   "type": "module",
+  "author": "eqian",
   "scripts": {
     "build": "tsup",
+    "release": "bumpp && pnpm -r publish --access public --no-git-checks",
     "test": "tsx __test__/index.test.ts"
   },
   "keywords": [
@@ -29,13 +31,17 @@
     "type": "git",
     "url": "https://github.com/c-eqian/eslint-config.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "peerDependencies": {
     "eslint": ">=9.0.0"
   },
   "files": [
     "dist"
   ],
-  "private": true,
+  "private": false,
   "dependencies": {
     "micromatch": "^4.0.8"
   },

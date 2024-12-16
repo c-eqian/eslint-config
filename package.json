@@ -4,6 +4,7 @@
   "description": "eslint预设规则",
   "type": "module",
   "private": false,
+  "author": "eqian",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "build:typegen": "tsx script/typegen.ts",
     "gen-dep": "esno script/listDev.ts",
     "release": "pnpm changelog && bumpp --commit --push --tag && pnpm -r publish --access public --no-git-checks",
+    "release:plugin": "pnpm -C src/component-file release",
     "prepublishOnly": "pnpm run build"
   },
   "files": [
@@ -43,7 +45,6 @@
     "conventional-changelog-cli": "^5.0.0",
     "eslint": "^9.14.0",
     "eslint-typegen": "^0.3.2",
-    "esmock": "^2.6.9",
     "esno": "^4.8.0",
     "local-pkg": "^0.5.0",
     "picocolors": "^1.1.1",
