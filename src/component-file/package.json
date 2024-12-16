@@ -1,7 +1,7 @@
 {
-  "name": "eslint-plugin-component-file",
-  "version": "1.0.1",
-  "description": "针对组件命名规范设计，采用组件名称大驼峰命名；禁止对组件名称命名为index.{vue,tsx,jsx}或者Index.{vue,tsx,jsx}",
+  "name": "eslint-plugin-file-naming",
+  "version": "1.0.0",
+  "description": "eslint文件命名规范惯例插件",
   "type": "module",
   "author": "eqian",
   "scripts": {
@@ -17,7 +17,7 @@
     "path",
     "file",
     "filename",
-    "component-name",
+    "file-naming",
     "naming-conventions"
   ],
   "main": "./dist/index.js",

@@ -2,7 +2,7 @@ import { defineConfig } from 'tsup'
 
 export default defineConfig(
   {
-    entry: ['./index.test.ts'],
+    entry: ['./index.ts'],
     format: ['esm'],
     target: 'node18.18',
     minify: true,

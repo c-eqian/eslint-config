@@ -6,18 +6,18 @@
 ```javascript
 export default [
     {
-        name: 'component-file',
+        name: 'file-naming',
         plugins: {
-            'component-file': componentFile,
+            'file-naming': componentFile,
         },
         rules: {
-            'component-file/component-naming': [
+            'file-naming/component-naming': [
                 'error',
                 {
                     '**/src/**/*.{jsx,tsx,vue}': 'PASCAL_CASE', // 对组件统一使用大驼峰
                 }
             ],
-            'component-file/no-index-naming': [ // 禁止对组件命名index或者Index
+            'file-naming/no-index-naming': [ // 禁止对组件命名index或者Index
                 'error',
                 '**/src/**/*.{jsx,tsx,vue}'
             ],
@@ -31,7 +31,7 @@ export default [
 以模块名为命名主要有利用更加直观的知道该组件的实际作用，此外在使用组件时，一般也会是以大驼峰的形式导出组件，因此，这样可以减少一定的观感疲劳
 ```javascript
     rules: {
-      'component-file/no-index-naming': [ // 禁止使用index方式命名
+      'file-naming/no-index-naming': [ // 禁止使用index方式命名
         'error',
         '**/src/**/*.{jsx,tsx,vue}'
       ],
@@ -39,7 +39,7 @@ export default [
     
     // 配置多选
 rules: {
-    'component-file/no-index-naming': [ // 禁止使用index方式命名
+    'file-naming/no-index-naming': [ // 禁止使用index方式命名
         'error',
         ['**/src/**/*.{jsx,tsx,vue}', '**/packages/**/*.{jsx,tsx,vue}']
     ],
@@ -52,7 +52,7 @@ rules: {
 这样做的好处是避免与原生HTML标签产生歧义，或者如果你不想使用该默认规则可以通过配置，选择合适自身习惯的规则，但是对于团队开发的项目而已，统一的开发规则是很有必要的。
 ```javascript
     rules: {
-      'component-file/component-naming': [
+      'file-naming/component-naming': [
         'error',
         {
           '**/src/**/*.{jsx,tsx,vue}': 'PASCAL_CASE', // 对组件统一使用大驼峰
@@ -61,6 +61,7 @@ rules: {
     }
 ```
 ## 命名规则
+
 ```javascript
 
   CAMEL_CASE // Hello, helloWorld,

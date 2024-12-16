@@ -7,7 +7,7 @@ export const rules = {
 };
 const plugin = {
     meta: {
-        name: 'eslint-plugin-component-file',
+        name: 'eslint-plugin-file-naming',
         version: '1.0.0'
     },
     rules
