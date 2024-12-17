@@ -1,3 +1,10 @@
+
+/**
+ * @Author: 十三
+ * @Date: 2024/12/17
+ * @email: 2429120006@qq.com
+ * @Description: 组件命名惯例规则
+*/
 import micromatch from 'micromatch';
 import { COMPONENT_EXTNAME, DEFAULT_PATH_PATTERN, NAMING_MAP } from '../constants';
 import { getExtname, getFilenameNotExt, getFullPath } from '../utils';

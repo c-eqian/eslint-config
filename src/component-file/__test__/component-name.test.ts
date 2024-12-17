@@ -1,6 +1,6 @@
 
 import { RuleTester } from 'eslint';
-import componentFile from '../rules/component-name'
+import componentFile from '../rules/component-naming'
 const ruleTester = new RuleTester();
 
 export const testComponentName = ()=>{

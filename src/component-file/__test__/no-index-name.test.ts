@@ -1,6 +1,6 @@
 
 import { RuleTester } from 'eslint';
-import noIndexName from '../rules/no-index-name'
+import noIndexName from '../rules/no-index-naming'
 const ruleTester = new RuleTester();
 
 export const testNoIndexName=()=>{

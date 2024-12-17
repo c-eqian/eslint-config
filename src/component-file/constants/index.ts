@@ -19,3 +19,5 @@ export const COMPONENT_EXTNAME = ['.vue', '.tsx', '.jsx'];
 
 // 默认路径
 export const DEFAULT_PATH_PATTERN = '**/*.{jsx,vue,tsx}';
+// 默认文件夹
+export const DEFAULT_FOLDER_PATTERN = '**/src/**';

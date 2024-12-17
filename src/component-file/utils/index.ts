@@ -1,6 +1,6 @@
-import { posix, sep } from 'node:path'
-import { join } from "path";
-import  type { Rule } from 'eslint'
+import {posix, sep} from 'node:path'
+import {join} from "path";
+import type {Rule} from 'eslint'
 // 系统驱动号匹配
 export const WINDOWS_DRIVE_LETTER_REGEXP = /^[A-Za-z]:\//;
 /**
@@ -61,3 +61,90 @@ export const removeDriveLetter = (path:string) => transformPathToPosix(path).rep
  * @param context
  */
 export const getFullPath = (context: Rule.RuleContext) => removeDriveLetter(getPathByRoot(context.physicalFilename, context.cwd))
+/**
+ * 获取文件夹
+ * @param path
+ * @example
+ * 'C:\\Users\\User\\Documents\\file.txt' => C:\\Users\\User\\Documents
+ */
+export const getFolderPath = (path:string)=> {
+    return posix.join(posix.dirname(path), posix.sep);
+}
+
+/**
+ * 获取文件夹名称
+ * @example
+ * Users\\User\\Documents\\ => [Users, User, Documents]
+ */
+export const getChunkFolder=(path:string)=> {
+    return path.split(posix.sep).filter(p=> !isEmpty(p));
+}
+
+/**
+ * 检测一个值是否为 undefined、null、NAN
+ * @param value
+ */
+export const isNil = (value:unknown)=> value===undefined || value===null || Number.isNaN(value)
+/**
+ * 是否为数组
+ * @param value
+ */
+export const isArray = (value:unknown): value is Array<any> => Array.isArray(value)
+/**
+ * 值是否为一个对象
+ * @param value
+ */
+export const isObject = (value:unknown): value is Object =>  Object.prototype.toString.call(value) === '[object Object]';
+/**
+ * 是否为空
+ * @param value
+ */
+export const isEmpty = (value: unknown):boolean=> {
+    if (isArray(value)) return value.length === 0;
+    if (isObject(value)) return Reflect.ownKeys(value).length === 0;
+    return value === '' || isNil(value);
+}
+/**
+ * 获取文件夹的子文件夹
+ * @param path
+ * @example
+ * repos/vue-t/tests/views/index/home.vue
+ * [
+ *   'repos',
+ *   'repos/vue-t',
+ *   'repos/vue-t/tests',
+ *   'repos/vue-t/tests/views',
+ *   'repos/vue-t/tests/views/index',
+ *   'repos/vue-t/tests/views/index/home.vue'
+ * ]
+ */
+export const  getAllSubPaths = (path: string): string[] =>{
+    const separator = posix.sep;
+    const parts = path.split(separator).filter(p=> !isEmpty(p));
+    const result: string[] = [];
+
+    // 递归生成所有子路径
+    const generatePaths = (currentIndex: number): void => {
+        if (currentIndex <= parts.length) {
+            const subPath = parts.slice(0, currentIndex).join(separator);
+            if (subPath) {
+                result.push(subPath);
+            }
+            if (currentIndex < parts.length) {
+                generatePaths(currentIndex + 1);
+            }
+        }
+    };
+
+    generatePaths(1); // 从第一个子目录开始生成（排除根目录）
+    result.sort(); // 排序
+    return [...new Set(result.map(p => p.endsWith(separator) ? p.slice(0, -1) : p))];
+}
+
+/**
+ * 获取最后文件夹名称
+ * @param path
+ * @example
+ * 'repos/vue-t/tests/views/index'=> 'index'
+ */
+export const getLastSubPath = (path:string)=> path.substring(path.lastIndexOf(posix.sep) + 1)

@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 优化component-file插件" />
+    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 优化component-file插件">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/__test__/component-name.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/__test__/component-name.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/__test__/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/__test__/index.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/__test__/no-index-name.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/__test__/no-index-name.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/constants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/constants/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/rules/component-name.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/rules/component-naming.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/rules/no-index-name.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/rules/no-index-naming.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/utils/index.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +93,7 @@
       <recent name="E:\project\@eqian\eslint-config\packages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.release:plugin">
+  <component name="RunManager" selected="npm.build:plugin">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -135,10 +146,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.release:plugin" />
-        <item itemvalue="npm.test:plugin" />
         <item itemvalue="npm.build:plugin" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.test:plugin" />
+        <item itemvalue="npm.release:plugin" />
         <item itemvalue="npm.gen-dep" />
       </list>
     </recent_temporary>
@@ -194,6 +205,9 @@
       <workItem from="1732160173898" duration="4446000" />
       <workItem from="1734316016795" duration="18265000" />
       <workItem from="1734340088347" duration="4442000" />
+      <workItem from="1734353702323" duration="566000" />
+      <workItem from="1734354468324" duration="7772000" />
+      <workItem from="1734406819431" duration="11101000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 默认配置">
       <option name="closed" value="true" />
@@ -299,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734353472235</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: 优化component-file插件">
+      <option name="closed" value="true" />
+      <created>1734354138342</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734354138342</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
