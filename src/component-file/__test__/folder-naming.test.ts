@@ -26,6 +26,15 @@ export const testFolderNaming=()=>{
         invalid: [
             {
                 code: "const name = 'test';",
+                filename: 'src/page/adminManage',
+                errors: [
+                    {
+                        message: `In the path of the file "src/page/adminManage", the name of the folder "adminManage" does not match "KEBAB_CASE"`
+                    }
+                ]
+            },
+            {
+                code: "const name = 'test';",
                 filename: 'src/page/adminManage/index.vue',
                 errors: [
                     {

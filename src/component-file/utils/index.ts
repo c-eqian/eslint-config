@@ -1,6 +1,7 @@
 import {posix, sep} from 'node:path'
 import {join} from "path";
 import type {Rule} from 'eslint'
+import micromatch from 'micromatch'
 // 系统驱动号匹配
 export const WINDOWS_DRIVE_LETTER_REGEXP = /^[A-Za-z]:\//;
 /**
@@ -62,13 +63,25 @@ export const removeDriveLetter = (path:string) => transformPathToPosix(path).rep
  */
 export const getFullPath = (context: Rule.RuleContext) => removeDriveLetter(getPathByRoot(context.physicalFilename, context.cwd))
 /**
+ * 获取最后文件夹名称
+ * @param path
+ * @example
+ * 'repos/vue-t/tests/views/index'=> 'index'
+ */
+export const getLastSubPath = (path:string)=> path.substring(path.lastIndexOf(posix.sep) + 1)
+
+/**
  * 获取文件夹
  * @param path
  * @example
  * 'C:\\Users\\User\\Documents\\file.txt' => C:\\Users\\User\\Documents
  */
 export const getFolderPath = (path:string)=> {
-    return posix.join(posix.dirname(path), posix.sep);
+    if (micromatch.isMatch(path, '**/*.*')){
+        return posix.join(posix.dirname(path), posix.sep);
+    }
+    return path;
+
 }
 
 /**
@@ -140,11 +153,3 @@ export const  getAllSubPaths = (path: string): string[] =>{
     result.sort(); // 排序
     return [...new Set(result.map(p => p.endsWith(separator) ? p.slice(0, -1) : p))];
 }
-
-/**
- * 获取最后文件夹名称
- * @param path
- * @example
- * 'repos/vue-t/tests/views/index'=> 'index'
- */
-export const getLastSubPath = (path:string)=> path.substring(path.lastIndexOf(posix.sep) + 1)
