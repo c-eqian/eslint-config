@@ -6,7 +6,7 @@
 */
 import micromatch from 'micromatch';
 import {DEFAULT_FOLDER_PATTERN, NAMING_MAP} from '../constants';
-import {getAllSubPaths, getChunkFolder, getFolderPath, getFullPath, getLastSubPath, isEmpty, isNil} from '../utils';
+import {getAllSubPaths, getChunkFolder, getFolderPath, getFullPath, isEmpty, isNil} from '../utils';
 import type { Rule,AST } from 'eslint'
 import { FOLDER_MATCH_ERROR_MESSAGE } from "../constants/error-message";
 export default {
@@ -42,17 +42,19 @@ export default {
     create(context: Rule.RuleContext) {
         return {
             Program(node: AST.Program) {
-                const rulesOptions = context.options[0] as Record<any, keyof typeof NAMING_MAP>;
+                const rulesOptions = context.options[0] as Record<any, any>;
                 const filenameWithPath = getFullPath(context); // 获取当前工作文件路径
                 const folderPath = getFolderPath(filenameWithPath); // 获取文件夹
                 let rules = rulesOptions;
                 if (!rulesOptions || Object.keys(rulesOptions).length === 0) {
-                    rules = {[DEFAULT_FOLDER_PATTERN]: 'KEBAB_CASE'} // 默认烤串
-                    ;
+                    rules = {[DEFAULT_FOLDER_PATTERN]: 'KEBAB_CASE'}; // 默认烤串
+                }
+                let getIgnore:string[] = []
+                if (rules.ignore){
+                    getIgnore= rules.ignore  ??  []
                 }
                 for (const [folderPattern, namingPattern] of Object.entries(rules)) {
-
-                    if (!micromatch.isMatch(folderPath, folderPattern, {contains: true})) {
+                    if (folderPattern === 'ignore' || !micromatch.isMatch(folderPath, folderPattern, {contains: true})) {
                         continue
                     }
                     const subPaths = getAllSubPaths(folderPath);
@@ -61,20 +63,22 @@ export default {
                             dot: true,
                         });
                         if (isNil(matchedPaths)) continue;
-                        const folderPaths = matchedPaths?.filter(p=> !isEmpty(p)).reduce((s, p) => s.concat(getChunkFolder(p)), []);
+                        const folderPaths = matchedPaths!.filter(p=> !isEmpty(p)).reduce((s, p) => s.concat(getChunkFolder(p)), [] as string[]);
                         const target = NAMING_MAP[namingPattern] ?? NAMING_MAP.KEBAB_CASE;
 
                         for (const folder of folderPaths) {
                             if (!micromatch.isMatch(folder, target)) {
-                                context.report({
-                                    node,
-                                    messageId: 'matchError',
-                                    data: {
-                                        subPath,
-                                        folder,
-                                        target: namingPattern,
-                                    }
-                                })
+                                if (!getIgnore.includes(folder)){
+                                    context.report({
+                                        node,
+                                        messageId: 'matchError',
+                                        data: {
+                                            subPath,
+                                            folder,
+                                            target: namingPattern,
+                                        }
+                                    })
+                                }
                             }
                         }
 

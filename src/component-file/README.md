@@ -144,6 +144,38 @@ rules: {
 // src/components/login-index.vue
 ```
 
+#### 忽略某项
+
+可以通过配置字段`ignore`，值为一个数组字符串的项来进行忽略某个文件夹
+
+```javascript
+    rules: {
+      'file-naming/folder-naming': [
+        'error',
+        {
+          '**/src/**/*': 'PASCAL_CASE', // 对组件统一使用烤肉串
+           '**/component/**/*': 'PASCAL_CASE', // 对组件统一使用烤肉串
+            ignore: ['table-config', 'button-config'] // 仅支持指定文件夹，不支持glob匹配
+        }
+      ]
+    }
+```
+
+❎错误
+
+```javascript
+// ignore: ['table-config'] 
+// src/components/table-config/button-config/Login.vue
+// error: In the path of the file "src/components/table-config/button-config", the name of the folder "button-config" does not match "PASCAL_CASE"
+```
+
+✅正确
+
+```javascript
+// ignore: ['table-config', 'button-config'] 
+// src/components/table-config/button-config/Login.vue
+```
+
 ## 命名规则
 
 ```javascript
