@@ -17,7 +17,7 @@ import { eslintPresets } from '@eqian/eslint-config';
 export default eslintPresets([
   {
       // 内置相关忽略文件，同样，也可以使用全局忽略文件，规则请查阅eslint文档
-    ignores: ['eslint.config.mjs', '.yalc', 'yalc'],
+    ignores: ['eslint.config.ts', '.yalc', 'yalc'],
     name: 'ignores',
   },
 ]);
@@ -35,7 +35,7 @@ export default eslintPresets([
 import { eslintPresets } from '@eqian/eslint-config';
 export default eslintPresets([
     {
-        ignores: ['eslint.config.mjs', '.yalc', 'yalc'],
+        ignores: ['eslint.config.ts', '.yalc', 'yalc'],
         name: 'test',
     },
     // 自定义规则

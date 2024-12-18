@@ -1,6 +1,6 @@
+import { pluginTypescript } from "../plugins";
+import type { Config } from "../types";
 import { javascript, restrictedSyntaxJs } from "./javascript";
-import type { Config } from '../types'
-import {pluginTypescript} from "../plugins";
 const _JS = "**/*.?([cm])js";
 const _TS = "**/*.?([cm])ts";
 const _TSX = "**/*.tsx";
@@ -20,8 +20,8 @@ export const typescriptCore = pluginTypescript.config({
     "@typescript-eslint/consistent-type-imports": [
       "error",
       {
-        prefer: "type-imports"
-      }
+        prefer: "type-imports",
+      },
     ],
     "@typescript-eslint/method-signature-style": ["error", "property"],
     "@typescript-eslint/no-empty-object-type": "off",
@@ -31,17 +31,16 @@ export const typescriptCore = pluginTypescript.config({
     "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-unsafe-function-type": "off",
     "@typescript-eslint/naming-convention": [
-        'error',
-      { selector: 'interface',
-        format: ['PascalCase'],
+      "error",
+      {
+        selector: "interface",
+        format: ["PascalCase"],
         custom: {
           regex: "^I[A-Z]",
-          match: true
-        }
+          match: true,
+        },
       },
-      { selector: 'typeAlias',
-        format: ['PascalCase']
-      }
+      { selector: "typeAlias", format: ["PascalCase"] },
     ],
     "@typescript-eslint/no-unused-expressions": [
       "error",

@@ -26,6 +26,7 @@
     "gen-dep": "esno script/listDev.ts",
     "release": "pnpm run build && pnpm changelog && bumpp --commit --push --tag && pnpm -r publish --access public --no-git-checks",
     "release:plugin": "pnpm -C src/component-file release",
+    "lint:fix": "eslint --fix  --flag unstable_ts_config",
     "prepublishOnly": "pnpm run build"
   },
   "files": [
@@ -46,6 +47,7 @@
     "eslint": "^9.14.0",
     "eslint-typegen": "^0.3.2",
     "esno": "^4.8.0",
+    "jiti": "^2.4.2",
     "local-pkg": "^0.5.0",
     "picocolors": "^1.1.1",
     "tsup": "^8.3.5",

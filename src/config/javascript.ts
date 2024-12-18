@@ -1,9 +1,8 @@
-
 // @ts-ignore
 import process from "node:process";
-import type { Config } from '../types'
-import {pluginJs, pluginUnusedImports} from "../plugins";
 import globals from "globals";
+import { pluginJs, pluginUnusedImports } from "../plugins";
+import type { Config } from "../types";
 const isInEditor = !!(
   (process.env.VSCODE_PID ||
     process.env.VSCODE_CWD ||
@@ -18,8 +17,8 @@ export const restrictedSyntaxJs = [
 ];
 
 // @ts-ignore
-export const javascript:Config[] = [
-  { ...pluginJs.configs.recommended, name: 'eqian/js/recommended' },
+export const javascript: Config[] = [
+  { ...pluginJs.configs.recommended, name: "eqian/js/recommended" },
   {
     languageOptions: {
       globals: {
@@ -31,9 +30,9 @@ export const javascript:Config[] = [
         ecmaFeatures: {
           jsx: true,
         },
-        sourceType: 'module',
+        sourceType: "module",
       },
-      sourceType: 'module',
+      sourceType: "module",
     },
     name: "eqian/js",
     plugins: {
@@ -91,7 +90,11 @@ export const javascript:Config[] = [
       "unused-imports/no-unused-imports": isInEditor ? "off" : "error",
       "unused-imports/no-unused-vars": [
         "error",
-        { args: "after-used", ignoreRestSiblings: true, argsIgnorePattern: "^_" },
+        {
+          args: "after-used",
+          ignoreRestSiblings: true,
+          argsIgnorePattern: "^_",
+        },
       ],
       "use-isnan": [
         "error",

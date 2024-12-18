@@ -1,6 +1,5 @@
-
-import type { Config } from '../types'
-import {pluginImport} from "../plugins";
+import { pluginImport } from "../plugins";
+import type { Config } from "../types";
 export const imports: Config[] = [
   {
     ...pluginImport.configs.typescript,
@@ -18,7 +17,7 @@ export const imports: Config[] = [
       "import/no-mutable-exports": "error",
       "import/no-named-default": "error",
       "import/no-self-import": "error",
-      "import/no-webpack-loader-syntax": "error"
+      "import/no-webpack-loader-syntax": "error",
     },
   },
 ];

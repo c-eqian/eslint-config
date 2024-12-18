@@ -1,7 +1,7 @@
-import { defineConfig } from 'bumpp'
+import { defineConfig } from "bumpp";
 
 export default defineConfig({
-   commit:false,
-    tag: false,
-    push: false
-})
+  commit: false,
+  tag: false,
+  push: false,
+});
