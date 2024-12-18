@@ -824,6 +824,22 @@ export interface Rules {
    */
   'eqeqeq'?: Linter.RuleEntry<Eqeqeq>
   /**
+   * Enforce PascalCase for component filenames with .vue or .tsx extension
+   */
+  'file-naming/component-naming'?: Linter.RuleEntry<FileNamingComponentNaming>
+  /**
+   * The file name should be named according to the specified rule
+   */
+  'file-naming/filename-naming'?: Linter.RuleEntry<FileNamingFilenameNaming>
+  /**
+   * The naming convention for folders only applies to folders
+   */
+  'file-naming/folder-naming'?: Linter.RuleEntry<FileNamingFolderNaming>
+  /**
+   * Matching file names named 'index' or 'Index' is not allowed
+   */
+  'file-naming/no-index-naming'?: Linter.RuleEntry<FileNamingNoIndexNaming>
+  /**
    * Enforce `for` loop update clause moving the counter in the right direction
    * @see https://eslint.org/docs/latest/rules/for-direction
    */
@@ -5061,6 +5077,34 @@ type EolLast = []|[("always" | "never" | "unix" | "windows")]
 type Eqeqeq = ([]|["always"]|["always", {
   null?: ("always" | "never" | "ignore")
 }] | []|[("smart" | "allow-null")])
+// ----- file-naming/component-naming -----
+type FileNamingComponentNaming = []|[{
+  [k: string]: string | undefined
+}]|[{
+  [k: string]: string | undefined
+}, {
+  errorMessage?: string
+  [k: string]: unknown | undefined
+}]
+// ----- file-naming/filename-naming -----
+type FileNamingFilenameNaming = []|[{
+  [k: string]: string | undefined
+}]|[{
+  [k: string]: string | undefined
+}, {
+  errorMessage?: string
+  [k: string]: unknown | undefined
+}]
+// ----- file-naming/folder-naming -----
+type FileNamingFolderNaming = []|[{
+  [k: string]: (string | string[]) | undefined
+}]
+// ----- file-naming/no-index-naming -----
+type FileNamingNoIndexNaming = []|[{
+  [k: string]: string | undefined
+}]|[{
+  [k: string]: string | undefined
+}, unknown[]]
 // ----- func-call-spacing -----
 type FuncCallSpacing = ([]|["never"] | []|["always"]|["always", {
   allowNewlines?: boolean

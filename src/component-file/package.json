@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-file-naming",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "eslint文件命名规范惯例插件",
   "type": "module",
   "author": "eqian",

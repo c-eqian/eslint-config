@@ -4,43 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat(plugin): 修复空文件夹问题">
+    <list default="true" id="300b2ba2-cb5d-4613-a65b-e2550ec7fee6" name="更改" comment="feat: 新增命名插件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/listDev.ts" beforeDir="false" afterPath="$PROJECT_DIR$/script/listDev.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/typegen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/script/typegen.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component-file/__test__/component-name.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/__test__/component-name.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component-file/__test__/folder-naming.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/__test__/folder-naming.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component-file/__test__/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/__test__/index.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component-file/__test__/no-index-name.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/__test__/no-index-name.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component-file/bump.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/bump.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component-file/constants/error-message.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/constants/error-message.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component-file/constants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/constants/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component-file/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component-file/rules/component-naming.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/rules/component-naming.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component-file/rules/folder-naming.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/rules/folder-naming.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component-file/rules/no-index-naming.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/rules/no-index-naming.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component-file/tsup.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/tsup.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component-file/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/ignores.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/ignores.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/imports.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/imports.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/javascript.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/javascript.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/prettier.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/prettier.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/react.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/react.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/sort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/sort.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/typescript.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/typescript.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/vue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/vue.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parsePluginsImports.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsePluginsImports.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presets.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presets.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/prettier.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/prettier.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shims.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shims.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-file/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-file/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/file-naming.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/file-naming.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/typegen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typegen.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsup.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tsup.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +61,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/self/eslint-config/src/component-file",
+    "last_opened_file_path": "E:/self/eslint-config/src/component-file/__test__",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -110,28 +85,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\self\eslint-config\src\component-file\__test__" />
+      <recent name="E:\self\eslint-config\src\component-file\rules" />
       <recent name="E:\self\eslint-config\src\component-file" />
       <recent name="E:\self\eslint-config\src\config" />
       <recent name="E:\project\@eqian\eslint-config\src" />
-      <recent name="E:\project\@eqian\eslint-config\packages\config" />
-      <recent name="E:\project\@eqian\eslint-config\script" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\project\@eqian\eslint-config\packages\config" />
       <recent name="E:\project\@eqian\eslint-config\packages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.lint:fix">
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.release">
     <configuration name="build:plugin" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -147,6 +112,16 @@
       <command value="run" />
       <scripts>
         <script value="lint:fix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="release" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="release" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -174,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.lint:fix" />
-        <item itemvalue="npm.test:plugin" />
+        <item itemvalue="npm.release" />
         <item itemvalue="npm.release:plugin" />
+        <item itemvalue="npm.test:plugin" />
+        <item itemvalue="npm.lint:fix" />
         <item itemvalue="npm.build:plugin" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -239,6 +214,8 @@
       <workItem from="1734424783195" duration="2337000" />
       <workItem from="1734427948077" duration="754000" />
       <workItem from="1734482227702" duration="2426000" />
+      <workItem from="1734484708411" duration="3847000" />
+      <workItem from="1734488614421" duration="2178000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 默认配置">
       <option name="closed" value="true" />
@@ -376,7 +353,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734428588923</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat(plugin): 优化no-index规则，支持组件命名以外的文件">
+      <option name="closed" value="true" />
+      <created>1734486533380</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1734486533380</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: 新增命名插件">
+      <option name="closed" value="true" />
+      <created>1734487548476</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1734487548476</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,6 +403,8 @@
     <MESSAGE value="feat: 优化component-file插件" />
     <MESSAGE value="feat(plugin): 添加文件夹检查规则" />
     <MESSAGE value="feat(plugin): 修复空文件夹问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(plugin): 修复空文件夹问题" />
+    <MESSAGE value="feat(plugin): 优化no-index规则，支持组件命名以外的文件" />
+    <MESSAGE value="feat: 新增命名插件" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增命名插件" />
   </component>
 </project>

@@ -176,6 +176,47 @@ rules: {
 // src/components/table-config/button-config/Login.vue
 ```
 
+### filename-naming
+
+文件名命名规则，默认为`CAMEL_CASE`
+
+```javascript
+    rules: {
+      'file-naming/filename-namin': [
+        'error',
+        {
+          '**/src/**/*.{ts,js}': 'CAMEL_CASE', // 对文件.ts、.js统一使用小驼峰
+        }
+      ]
+    }
+// 配置多选
+    rules: {
+      'file-naming/filename-naming': [
+        'error',
+        {
+          '**/src/**/*.{js}': 'CAMEL_CASE', // 对文件.js统一使用小驼峰
+          '**/pages/**/*.{ts}': 'KEBAB_CASE', // 对文件.ts统一使用烤肉串
+        }
+      ]
+    }
+```
+
+#### 示例
+
+❎错误
+
+```javascript
+// src/components/login-index.ts
+// error: File 'login-index.ts' with src/components/login-index.ts should to be named 'CAMEL_CASE'
+```
+
+✅正确
+
+```javascript
+// src/components/login.ts
+// src/pages/login-index.ts
+```
+
 ## 命名规则
 
 ```javascript

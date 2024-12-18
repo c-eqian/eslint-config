@@ -17,12 +17,19 @@ export const fileNaming: Config[] = [
             ],
             'file-naming/no-index-naming': [ // 禁止对组件命名index或者Index
                 'error',
-                '**/src/**/*.{jsx,tsx,vue}'
+                // @ts-ignore
+               '**/src/**/*.{jsx,tsx,vue}'
             ],
             'file-naming/folder-naming': [
                 'error',
                 {
                     '**/src/**/*': 'KEBAB_CASE', // 对组件统一使用烤肉串
+                }
+            ],
+            'file-naming/filename-naming': [
+                'error',
+                {
+                    '**/src/**/*': 'CAMEL_CASE', // 对组件统一使用小驼峰
                 }
             ],
         }
