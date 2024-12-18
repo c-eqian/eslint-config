@@ -1,6 +1,6 @@
 {
   "name": "@eqian/eslint-config-preset",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "eslint预设规则",
   "type": "module",
   "private": false,
@@ -46,7 +46,6 @@
     "conventional-changelog-cli": "^5.0.0",
     "eslint": "^9.14.0",
     "eslint-typegen": "^0.3.2",
-    "eslint-plugin-file-naming": "workspace:*",
     "esno": "^4.8.0",
     "jiti": "^2.4.2",
     "local-pkg": "^0.5.0",
@@ -72,6 +71,7 @@
     "@types/eslint-config-prettier": "^6.11.3",
     "@typescript-eslint/parser": "^8.14.0",
     "eslint-config-flat-gitignore": "^0.3.0",
+    "eslint-plugin-file-naming": "workspace:^",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-import-x": "^4.4.2",
