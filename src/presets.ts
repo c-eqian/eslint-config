@@ -9,6 +9,7 @@ import {
   sortTsconfig,
   typescript,
   vue,
+    fileNaming,
 } from "./config";
 import type { Config } from "./types";
 
@@ -23,6 +24,7 @@ export const presetBasic: Config[] = [
   ...presetJavaScript,
   ...sortImports,
   ...typescript,
+  ...fileNaming
 ];
 export const presetAll: Config[] = [
   ...presetBasic,

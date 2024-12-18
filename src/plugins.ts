@@ -45,3 +45,6 @@ export const pluginPerfectionist: any = interopDefault(_pluginPerfectionist);
 export const pluginReactHooks: any = interopDefault(reactHooks);
 export const pluginReactRefresh = interopDefault(reactRefresh);
 export const pluginReact = interopDefault(_pluginReact);
+
+import namingPlugin from "eslint-plugin-file-naming";
+export const fileNamingPlugin = interopDefault(namingPlugin)

@@ -6,3 +6,4 @@ export * from "./sort";
 export * from "./typescript";
 export * from "./vue";
 export * from "./react";
+export * from "./file-naming";

@@ -46,6 +46,7 @@
     "conventional-changelog-cli": "^5.0.0",
     "eslint": "^9.14.0",
     "eslint-typegen": "^0.3.2",
+    "eslint-plugin-file-naming": "workspace:*",
     "esno": "^4.8.0",
     "jiti": "^2.4.2",
     "local-pkg": "^0.5.0",
