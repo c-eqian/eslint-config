@@ -29,7 +29,7 @@ export const fileNaming: Config[] = [
             'file-naming/filename-naming': [
                 'error',
                 {
-                    '**/src/**/*': 'CAMEL_CASE', // 对组件统一使用小驼峰
+                    '**/src/**/*.{ts,js,mts,mjs}': 'CAMEL_CASE', // 对组件统一使用小驼峰
                 }
             ],
         }
