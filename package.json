@@ -20,12 +20,12 @@
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r",
     "build": "pnpm run build:typegen && tsup",
-    "build:plugin": "pnpm -C src/component-file build",
-    "test:plugin": "pnpm -C src/component-file test",
+    "build:plugin": "pnpm -C src/plugin-file-naming build",
+    "test:plugin": "pnpm -C src/plugin-file-naming test",
     "build:typegen": "tsx script/typegen.ts",
     "gen-dep": "esno script/listDev.ts",
     "release": "pnpm run build && pnpm changelog && bumpp --commit --push --tag && pnpm -r publish --access public --no-git-checks",
-    "release:plugin": "pnpm -C src/component-file release",
+    "release:plugin": "pnpm -C src/plugin-file-naming release",
     "lint:fix": "eslint --fix  --flag unstable_ts_config",
     "prepublishOnly": "pnpm run build"
   },

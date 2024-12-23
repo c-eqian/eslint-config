@@ -1,5 +1,5 @@
 import * as pluginImport from "eslint-plugin-import-x";
-import { eslintPresets } from "./src";
+import { eslintPresets } from "./src/preset-config";
 export default eslintPresets([
   {
     ...pluginImport.configs.typescript,

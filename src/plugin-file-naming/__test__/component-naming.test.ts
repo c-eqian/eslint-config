@@ -20,7 +20,7 @@ export const testComponentName = () => {
         filename: "src/components/login.vue",
         errors: [
           {
-            message: 'Component filename "login.vue" should be in PASCAL_CASE.',
+            message: "Component filename 'login.vue' should be in PASCAL_CASE",
           },
         ],
       },
@@ -30,7 +30,7 @@ export const testComponentName = () => {
         errors: [
           {
             message:
-              'Component filename "login-log.vue" should be in PASCAL_CASE.',
+              "Component filename 'login-log.vue' should be in PASCAL_CASE",
           },
         ],
       },
@@ -40,7 +40,7 @@ export const testComponentName = () => {
         errors: [
           {
             message:
-              'Component filename "login.log.vue" should be in PASCAL_CASE.',
+              "Component filename 'login.log.vue' should be in PASCAL_CASE",
           },
         ],
       },
@@ -71,7 +71,7 @@ export const testComponentName = () => {
           errors: [
             {
               message:
-                'Component filename "login.vue" should be in PASCAL_CASE.',
+                "Component filename 'login.vue' should be in PASCAL_CASE",
             },
           ],
         },
@@ -82,7 +82,7 @@ export const testComponentName = () => {
           errors: [
             {
               message:
-                'Component filename "login-log.vue" should be in PASCAL_CASE.',
+                "Component filename 'login-log.vue' should be in PASCAL_CASE",
             },
           ],
         },
@@ -93,7 +93,7 @@ export const testComponentName = () => {
           errors: [
             {
               message:
-                'Component filename "login.log.vue" should be in PASCAL_CASE.',
+                "Component filename 'login.log.vue' should be in PASCAL_CASE",
             },
           ],
         },
@@ -125,7 +125,7 @@ export const testComponentName = () => {
           errors: [
             {
               message:
-                'Component filename "Login.vue" should be in CAMEL_CASE.',
+                "Component filename 'Login.vue' should be in CAMEL_CASE"
             },
           ],
         },
@@ -136,7 +136,7 @@ export const testComponentName = () => {
           errors: [
             {
               message:
-                'Component filename "login-log.vue" should be in CAMEL_CASE.',
+                "Component filename 'login-log.vue' should be in CAMEL_CASE",
             },
           ],
         },
@@ -147,7 +147,7 @@ export const testComponentName = () => {
           errors: [
             {
               message:
-                'Component filename "login.log.vue" should be in CAMEL_CASE.',
+                "Component filename 'login.log.vue' should be in CAMEL_CASE",
             },
           ],
         },
@@ -176,7 +176,7 @@ export const testComponentName = () => {
         options: [{ "**/components/**/*.{jsx,tsx,vue}": "KEBAB_CASE" }],
         errors: [
           {
-            message: 'Component filename "Login.tsx" should be in KEBAB_CASE.',
+            message: "Component filename 'Login.tsx' should be in KEBAB_CASE",
           },
         ],
       },
@@ -187,7 +187,7 @@ export const testComponentName = () => {
         errors: [
           {
             message:
-              'Component filename "login-log.jsx" should be in SNAKE_CASE.',
+              "Component filename 'login-log.jsx' should be in SNAKE_CASE",
           },
         ],
       },

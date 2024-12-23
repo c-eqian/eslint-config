@@ -28,7 +28,7 @@ export const testFolderNaming = () => {
         filename: "src/page/adminManage",
         errors: [
           {
-            message: `In the path of the file "src/page/adminManage", the name of the folder "adminManage" does not match "KEBAB_CASE"`,
+            message: "In the path of the file 'src/page/adminManage', the name of the folder 'adminManage' does not match 'KEBAB_CASE'",
           },
         ],
       },
@@ -37,7 +37,7 @@ export const testFolderNaming = () => {
         filename: "src/page/adminManage/index.vue",
         errors: [
           {
-            message: `In the path of the file "src/page/adminManage", the name of the folder "adminManage" does not match "KEBAB_CASE"`,
+            message: "In the path of the file 'src/page/adminManage', the name of the folder 'adminManage' does not match 'KEBAB_CASE'",
           },
         ],
       },
@@ -91,7 +91,7 @@ export const testFolderNaming = () => {
           options: [{ "src/pages/**": "PASCAL_CASE" }],
           errors: [
             {
-              message: `In the path of the file "src/pages/admin-manage", the name of the folder "admin-manage" does not match "PASCAL_CASE"`,
+              message: "In the path of the file 'src/pages/admin-manage', the name of the folder 'admin-manage' does not match 'PASCAL_CASE'",
             },
           ],
         },
@@ -106,7 +106,7 @@ export const testFolderNaming = () => {
           ],
           errors: [
             {
-              message: `In the path of the file "src/__test__/components/loginLog", the name of the folder "loginLog" does not match "SNAKE_CASE"`,
+              message: "In the path of the file 'src/__test__/components/loginLog', the name of the folder 'loginLog' does not match 'SNAKE_CASE'",
             },
           ],
         },
@@ -166,7 +166,7 @@ export const testFolderNaming = () => {
           options: [{ "src/pages/**": "PASCAL_CASE" }],
           errors: [
             {
-              message: `In the path of the file "src/pages/admin-manage", the name of the folder "admin-manage" does not match "PASCAL_CASE"`,
+              message: "In the path of the file 'src/pages/admin-manage', the name of the folder 'admin-manage' does not match 'PASCAL_CASE'",
             },
           ],
         },
@@ -181,7 +181,7 @@ export const testFolderNaming = () => {
           ],
           errors: [
             {
-              message: `In the path of the file "src/__test__/components/loginLog", the name of the folder "loginLog" does not match "SNAKE_CASE"`,
+              message: "In the path of the file 'src/__test__/components/loginLog', the name of the folder 'loginLog' does not match 'SNAKE_CASE'",
             },
           ],
         },
@@ -193,7 +193,7 @@ export const testFolderNaming = () => {
           ],
           errors: [
             {
-              message: `In the path of the file "src/components/table-config/button-config", the name of the folder "button-config" does not match "PASCAL_CASE"`,
+              message: "In the path of the file 'src/components/table-config/button-config', the name of the folder 'button-config' does not match 'PASCAL_CASE'",
             },
           ],
         },
