@@ -1,6 +1,6 @@
 {
   "name": "@eqian/eslint-config-preset",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "eslint预设规则",
   "type": "module",
   "private": false,
